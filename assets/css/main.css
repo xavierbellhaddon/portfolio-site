@@ -49,6 +49,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	p {
+		flex-grow: 1;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -541,9 +545,9 @@
 	.box {
 		border-radius: 4px;
 		margin-bottom: 2em;
-		/* background: #0c000b; */
 		background: #0c000b;
 		text-align: center;
+		position: relative;
 	}
 
 		.box > :last-child,
@@ -563,6 +567,9 @@
 		.box .inner {
 			padding: 1.5em;
 			width: 100% !important;
+			height: 100% !important;
+			display: flex;
+			flex-flow: column;
 		}
 
 			@media screen and (max-width: 480px) {
